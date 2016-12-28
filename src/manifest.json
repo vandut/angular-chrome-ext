@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Base project for Angular 2 Chrome extension",
+  "version": "1.0.0",
+  "author": "Konrad Bielak",
+
+  "short_name": "Angular 2 Chrome extension",
+  "description": "Base project for creating Chrome extensions using Angular 2.",
+
+  "icons": {
+    "128": "assets/icon-128.png"
+  },
+
+  "browser_action": {
+    "default_icon": "assets/icon-128.png",
+    "default_title": "Angular 2 Chrome extension"
+  },
+
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [],
+
+  "offline_enabled": true
+
+}
