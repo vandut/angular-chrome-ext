@@ -1,6 +1,6 @@
 # Angular 2 Chrome extensions
 
-Base Chrome extension developed using Angular 2 and configured to open new popup window.
+Basic "Hello, world!" Chrome extension developed using Angular 2 and configured to open new popup window.
 
 ## Prerequisites
 
