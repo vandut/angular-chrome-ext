@@ -17,4 +17,17 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+  constructor() {
+    var storeWindowPosition = () => {
+      localStorage['windowWidth'] = window.outerWidth;
+      localStorage['windowHeight'] = window.outerHeight;
+      localStorage['windowTop'] = window.screenTop;
+      localStorage['windowLeft'] = window.screenLeft;
+    };
+    window.addEventListener('resize', storeWindowPosition);
+    window.addEventListener('beforeunload', storeWindowPosition);
+  }
+
+}
